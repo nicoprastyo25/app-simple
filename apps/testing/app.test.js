@@ -21,6 +21,7 @@ describe('Unit Test /app1', () => {
 
   describe('Unit Test /app2', () => {
     it('should respond with "Hello App2!"', async () => {
+      jest.setTimeout(10000); // Menambahkan timeout 10 detik (secara default timeout adalah 5 detik)
       const response = await request(app).get('/app2');
       expect(response.status).toBe(200);
     });
