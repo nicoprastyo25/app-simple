@@ -18,7 +18,7 @@ app.get('/app1', (req, res) => {
 });
 
 app.get('/app2', (req, res) => {
-  res.send('Hello this App 2!')
+  res.send('Hello this App 3!')
 });
 
 app.get('/users', (req, res, next) => {
